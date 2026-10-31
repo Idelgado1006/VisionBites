@@ -109,9 +109,9 @@ VisionBites is a hackathon prototype, not a commercial food safety or clinical n
 
 Developed during **Hacktoberfest Hack Day Panama City — October 31, 2026**.
 
-- Development & UI — [Contributor]
-- Data & Validation — [Contributor]
-- Product, Documentation & Submission — [Contributor]
+- Development & UI — Edgar Saldaña
+- Data & Validation — Gabriel Medina
+- Product, Documentation & Submission — Isaac Delgado
 
 ## AI-Assisted Development
 
