@@ -22,86 +22,83 @@ At the same time, understanding the nutritional characteristics of prepared meal
 
 **VisionBites** is an open-source AI-powered food production planning prototype designed to help small food businesses make better use of their available ingredients.
 
-By combining generative AI, multimodal computer vision, nutritional reference data (INCAP & USDA), and mathematical optimization (PuLP), VisionBites transforms an ingredient inventory into a feasible meal production plan with exact macronutrients.
+By combining generative AI, nutritional reference data, and mathematical optimization, VisionBites aims to turn an ingredient inventory into a feasible meal production plan.
 
-### Key Capabilities
+### Planned Capabilities
 
-- **Multimodal Visual Scanning:** Scan inventory or ingredients directly from photos or camera with fallback presets.
-- **Smart Inventory:** Manage food inventory with quantities, expiration dates, and priority levels.
-- **AI Recipe Generation:** Propose structured recipe candidates using Gemma 4 via Gemini API.
-- **Nutritional Analysis:** Compute scientific macronutrients (calories, protein, carbohydrates, fats) using INCAP & USDA reference data.
-- **Resource Optimization:** Calculate integer feasible serving quantities using mathematical linear programming without exceeding ingredient availability.
-- **Two Planning Modes:**
-  - **Rescue Mode (Aprovechamiento):** Prioritizes planned consumption of higher priority / at-risk ingredients.
-  - **Balance Mode (Balance Nutricional):** Combines inventory priority with transparent food diversity.
-- **Inventory Insights:** Visualize estimated ingredient consumption, remaining quantities, and mass conservation.
+- **Smart Inventory:** Import food inventory with quantities and priority levels.
+- **AI Recipe Generation:** Generate candidate recipes using Gemma 4.
+- **Nutritional Analysis:** Estimate calories, protein, carbohydrates, and fats using reference data.
+- **Resource Optimization:** Calculate feasible serving quantities without exceeding ingredient availability.
+- **Two Planning Modes:** Compare inventory rescue with nutritional diversity considerations.
+- **Inventory Insights:** Visualize estimated ingredient consumption, remaining quantities, and planned utilization.
 
----
+*Final implemented features will be confirmed after testing.*
 
-## 🚀 Getting Started & Execution Guide (Windows PowerShell)
+##  How Gemma 4 Powers VisionBites
 
-### Prerequisites
-- Python 3.11 or 3.12 installed.
-- Internet connection (optional: fallback offline presets included if no key or offline).
+VisionBites uses the open-weight Gemma 4 model through Google's Gemini API.
 
-### Quick Setup Steps
+The system separates creative generation from numerical decision-making:
 
-```powershell
-# 1. Posicionarse en la carpeta del proyecto
-cd c:\Users\edgar\Desktop\MLH
+1. **Input:** A food business provides an inventory of available ingredients.
+2. **AI Generation:** Gemma 4 proposes structured recipe candidates using the provided ingredients.
+3. **Validation:** The application checks recipe ingredients and quantities.
+4. **Nutrition:** An independent nutritional catalog provides nutrient values.
+5. **Optimization:** A mathematical algorithm determines feasible serving quantities.
+6. **Results:** The interface presents a production plan and estimated inventory utilization.
 
-# 2. Crear entorno virtual (si no existe)
-py -3.11 -m venv .venv
+### AI Model
 
-# 3. Instalar dependencias
-.\.venv\Scripts\pip.exe install -r requirements.txt
+- **Model:** `gemma-4-26b-a4b-it`
+- **Provider:** Google Gemini API
+- **Integration:** Google GenAI Python SDK
+- **API/SDK versions:** To be documented after integration testing.
 
-# 4. Configurar variable de entorno (opcional para IA en vivo)
-Copy-Item .env.example .env
+Gemma 4 does not supply the nutritional reference values or independently determine inventory consumption.
 
-# 5. Ejecutar la aplicación Streamlit
-.\.venv\Scripts\python.exe -m streamlit run app.py
-```
+##  Technology Stack
 
-La aplicación abrirá automáticamente en tu navegador local en `http://localhost:8501`.
+| Technology | Purpose |
+|---|---|
+| Python | Application logic |
+| Gemma 4 | Candidate recipe generation |
+| Gemini API | Hosted model inference |
+| Streamlit | Web application |
+| Pandas | Data processing |
+| PuLP | Mathematical optimization |
+| CSV | Demo inventory and nutritional reference data |
 
----
+## Getting Started
 
-## 🧪 Automated Test Suite (T01 to T16)
+Installation and execution commands will be finalized after the application is integrated and tested.
 
-Para verificar todas las garantías contractuales, matemáticas, de resiliencia y de visión:
+A Gemini API key is required for live Gemma 4 generation.
 
-```powershell
-.\.venv\Scripts\python.exe -m pytest -q test_suite.py test_ui.py
-```
+[Create a Gemini API key](https://aistudio.google.com/apikey)
 
-### Verified Test Cases
-- **T01**: Ingesta de 20 alimentos y generación completa de plan.
-- **T02**: Rechazo estricto ante cantidades negativas (-10g) o IDs duplicados.
-- **T03**: Exclusión de productos marcados con `apto=false` o fecha vencida.
-- **T04**: Descarte inmediato de recetas con ingredientes inventados por la IA.
-- **T05**: Asignación de 0 porciones ante stock insuficiente (sin sobreasignación).
-- **T06**: Cálculo exacto de macronutrientes por porción con fórmula por 100g.
-- **T07**: Conservación rigurosa de masa: $\text{inicial} = \text{usado} + \text{restante}$ con tolerancia $< 0.01\,\text{g}$.
-- **T08**: Reoptimización instantánea en memoria sin re-invocar la IA.
-- **T09**: Activación automática y visible del catálogo de contingencia offline ante fallos de red.
-- **T10**: Rechazo de estimaciones arbitrarias cuando un alimento no figure en la base nutricional.
-- **T11**: Escaneo visual con presets de demostración y validación de inventario.
-- **T12**: Manejo seguro y conmutación de contingencia ante ausencia de imagen o desconexión.
-- **T13**: Validación Zero-Trust con Pydantic.
-- **T14**: Inmunidad del solver PuLP ante caracteres especiales en IDs de recetas y protección contra recetas con ingredientes faltantes.
-- **T15**: Cobertura offline completa: muestras guiadas (nevera, alacena, sancocho) generan recetas compatibles en contingencia local.
-- **T16**: Normalización determinista de sinónimos visuales hacia el catálogo oficial USDA/INCAP.
+API credentials must be stored locally and must never be committed to this repository.
 
----
+## Expected Demonstration
+
+The prototype is intended to demonstrate a workflow in which an inventory of 20 fictional food products is converted into recipe candidates, feasible servings, estimated nutrient values, and remaining inventory quantities.
+
+The demonstration will compare two optimization modes:
+
+**Rescue Mode:** Prioritizes the planned consumption of ingredients marked as higher priority.
+
+**Balance Mode:** Combines inventory priority with a transparent food-diversity score.
 
 ## 🇵🇦 Built for Panama
 
-VisionBites focuses on the challenges faced by small food businesses in Panama. Rather than providing a generic chatbot, the prototype combines AI-generated suggestions with explicit data validation and mathematical resource constraints.
+VisionBites focuses on the challenges faced by small food businesses in Panama.
+
+Rather than providing a generic chatbot, the prototype is designed to combine AI-generated suggestions with explicit data validation and mathematical resource constraints.
 
 ## Limitations
 
 VisionBites is a hackathon prototype, not a commercial food safety or clinical nutrition system.
+
 - Demo inventories are fictional.
 - Nutritional calculations are estimates based on reference databases.
 - The tool does not verify food safety, storage conditions, or allergens.
@@ -115,6 +112,10 @@ Developed during **Hacktoberfest Hack Day Panama City — October 31, 2026**.
 - Development & UI — Edgar Saldaña
 - Data & Validation — Gabriel Medina
 - Product, Documentation & Submission — Isaac Delgado
+
+## AI-Assisted Development
+
+This project may use AI-assisted development tools. All submitted code, documentation, calculations, and results are the responsibility of the project contributors and must be reviewed before submission.
 
 ## License
 
