@@ -1,0 +1,59 @@
+================================================================================
+DOCUMENTO DE FUENTES NUTRICIONALES, CONTEXTO NACIONAL Y LÍMITES DE LA DEMO
+================================================================================
+
+1. FUENTES DEL CATÁLOGO NUTRICIONAL (CERO DATOS ATRIBUIDOS A IA SIN FUENTE)
+--------------------------------------------------------------------------------
+[F-01] INCAP / OPS (Instituto de Nutrición de Centro América y Panamá / Organización
+       Panamericana de la Salud). "Tabla de Composición de Alimentos de Centroamérica",
+       2da Edición actualizada (Menchú, M.T., Méndez, H.). Valores expresados por 100 g
+       de porción comestible en estado crudo o cocido sin sal añadida.
+[F-02] USDA FoodData Central (U.S. Department of Agriculture, Agricultural Research
+       Service). Base de datos SR Legacy / Foundation Foods. Referencia cruzada por
+       FDC ID para carnes, aves, cereales cocidos y vegetales frescos.
+
+2. DATOS DE CONTEXTO PANAMEÑO (CON FUENTE, FECHA Y DECLARACIÓN DE DATO HISTÓRICO)
+--------------------------------------------------------------------------------
+[CONTEXTO 1 - PREVALENCIA DE EXCESO DE PESO EN PANAMÁ]
+- Dato: El 71.7% de la población adulta en Panamá (18 años o más) presenta exceso
+  de peso, desglosado en 36.4% con sobrepeso y 35.3% con obesidad. En escolares,
+  el exceso de peso alcanza aproximadamente el 36.7%.
+- Fuente y Fecha: Encuesta Nacional de Salud de Panamá (ENSPA 2019), Ministerio de
+  Salud (MINSA), Instituto Conmemorativo Gorgas de Estudios de la Salud (ICGES) e
+  Instituto Nacional de Estadística y Censo (INEC). Resultados publicados en 2020-2022.
+- Nota de Dato Histórico: Cifra de corte transversal histórico (recolección 2019);
+  se utiliza únicamente como referencia epidemiológica base y no refleja cambios
+  poblacionales posteriores al periodo 2020-2026.
+
+[CONTEXTO 2 - ESTRUCTURA DE CONSUMO Y CANASTA BÁSICA EN FONDAS PANAMEÑAS]
+- Dato: Dentro de la Canasta Básica Familiar de Alimentos (CBFA) para los distritos
+  de Panamá y San Miguelito, los cereales (arroz blanco), carnes (pollo, res de guisar),
+  menestras (porotos, lentejas, guandú) y raíces/plátanos aportan más del 65% de la
+  energía diaria de bajo costo consumida fuera del hogar ("comida corriente" de fonda).
+- Fuente y Fecha: Autoridad de Protección al Consumidor y Defensa de la Competencia
+  (ACODECO) / Ministerio de Economía y Finanzas (MEF) y Guías Alimentarias para
+  Panamá (GABAs - MINSA, actualización técnica 2021-2024).
+- Nota de Dato Histórico: Estructura de consumo referencial; la disponibilidad real
+  varía según estacionalidad agrícola en tierras altas (Chiriquí) y provincias centrales.
+
+[CONTEXTO 3 - MERMA DE PERECEDEROS EN PEQUEÑOS SERVICIOS DE ALIMENTACIÓN]
+- Dato: En América Latina y el Caribe, entre el 25% y el 34% de las pérdidas y
+  desperdicios en pequeños comercios gastronómicos se concentra en hortalizas,
+  tubérculos cocidos y proteínas preparadas por falta de rotación por prioridad (FEFO).
+- Fuente y Fecha: Organización de las Naciones Unidas para la Alimentación y la
+  Agricultura (FAO) / Informe Regional de Pérdidas y Desperdicios de Alimentos (2021-2023).
+- Nota de Dato Histórico: Estimación regional utilizada para justificar el parámetro
+  de prioridad (ALTA/MEDIA/BAJA) en el inventario de prueba.
+
+3. LÍMITES TÉCNICOS, SANITARIOS Y MÉDICOS DE LA DEMO (DISCLAIMER OBLIGATORIO)
+--------------------------------------------------------------------------------
+- LÍMITE MÉDICO: Esta herramienta optimiza el uso de inventario y calcula aportes de
+  macronutrientes por porción, pero NO constituye tratamiento médico, dieta clínica
+  personalizada ni asegura curar o revertir la obesidad, diabetes o hipertensión.
+- LÍMITE DE INOCUIDAD ALIMENTARIA: La etiqueta "APTO" en inventario_demo.csv es un
+  atributo lógico de validación de software. NO reemplaza la inspección física,
+  control de cadena de frío (0°C a 4°C en refrigeración; >60°C en mesa caliente) ni
+  los permisos sanitarios del MINSA / DEPA en Panamá.
+- LÍMITE BROMATOLÓGICO: Los valores de sodio reflejan el contenido intrínseco del
+  ingrediente según tablas INCAP/USDA; en una fonda real, el sodio final depende de
+  la sal y condimentos añadidos durante la cocción.
