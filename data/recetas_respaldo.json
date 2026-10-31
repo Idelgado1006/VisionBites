@@ -1,0 +1,189 @@
+[
+  {
+    "id": "pollo_guisado_criollo",
+    "nombre": "Pollo Guisado Criollo con Arroz",
+    "ingredientes": [
+      {"id": "pollo_crudo", "cantidad_g_por_porcion": 160},
+      {"id": "arroz_seco", "cantidad_g_por_porcion": 80},
+      {"id": "tomate_perita", "cantidad_g_por_porcion": 60},
+      {"id": "cebolla_criolla", "cantidad_g_por_porcion": 35},
+      {"id": "culantro_fresco", "cantidad_g_por_porcion": 5},
+      {"id": "aceite_vegetal", "cantidad_g_por_porcion": 10},
+      {"id": "sal_comun", "cantidad_g_por_porcion": 3}
+    ],
+    "metodo": "Sellar el pollo sazonado, sofreír con cebolla, tomate y culantro; cocer a fuego medio hasta reducir y acompañar con arroz.",
+    "tiempo_min": 40
+  },
+  {
+    "id": "sancocho_panameno",
+    "nombre": "Sancocho Tradicional Panameño",
+    "ingredientes": [
+      {"id": "pollo_crudo", "cantidad_g_por_porcion": 150},
+      {"id": "name_diamante", "cantidad_g_por_porcion": 120},
+      {"id": "maiz_mazorca", "cantidad_g_por_porcion": 70},
+      {"id": "culantro_fresco", "cantidad_g_por_porcion": 8},
+      {"id": "cebolla_criolla", "cantidad_g_por_porcion": 25},
+      {"id": "ajo_diente", "cantidad_g_por_porcion": 5},
+      {"id": "sal_comun", "cantidad_g_por_porcion": 3}
+    ],
+    "metodo": "Hervir el pollo con culantro y ajo; añadir maíz y ñame en trozos hasta lograr el espesor criollo característico.",
+    "tiempo_min": 50
+  },
+  {
+    "id": "carne_entomatada_arroz",
+    "nombre": "Carne Entomatada con Arroz y Maduro",
+    "ingredientes": [
+      {"id": "carne_res_cruda", "cantidad_g_por_porcion": 130},
+      {"id": "arroz_seco", "cantidad_g_por_porcion": 80},
+      {"id": "tomate_perita", "cantidad_g_por_porcion": 70},
+      {"id": "cebolla_criolla", "cantidad_g_por_porcion": 30},
+      {"id": "platano_maduro", "cantidad_g_por_porcion": 75},
+      {"id": "aceite_vegetal", "cantidad_g_por_porcion": 12},
+      {"id": "sal_comun", "cantidad_g_por_porcion": 3}
+    ],
+    "metodo": "Guisar carne cortada en salsa espesa de tomate criollo y cebolla; freír plátano maduro en tajadas y servir con arroz.",
+    "tiempo_min": 45
+  },
+  {
+    "id": "lentejas_con_arroz_platano",
+    "nombre": "Lentejas de Fonda con Arroz y Tajadas",
+    "ingredientes": [
+      {"id": "lentejas_secas", "cantidad_g_por_porcion": 70},
+      {"id": "arroz_seco", "cantidad_g_por_porcion": 80},
+      {"id": "zanahoria_cruda", "cantidad_g_por_porcion": 45},
+      {"id": "cebolla_criolla", "cantidad_g_por_porcion": 30},
+      {"id": "pimiento_verde", "cantidad_g_por_porcion": 25},
+      {"id": "platano_maduro", "cantidad_g_por_porcion": 70},
+      {"id": "aceite_vegetal", "cantidad_g_por_porcion": 10},
+      {"id": "sal_comun", "cantidad_g_por_porcion": 3}
+    ],
+    "metodo": "Cocinar las lentejas a fuego lento con sofrito de cebolla, pimiento y zanahoria; acompañar con arroz blanco y maduro.",
+    "tiempo_min": 35
+  },
+  {
+    "id": "arroz_guandu_pollo",
+    "nombre": "Arroz con Guandú y Pollo Criollo",
+    "ingredientes": [
+      {"id": "arroz_seco", "cantidad_g_por_porcion": 90},
+      {"id": "guandu_fresco", "cantidad_g_por_porcion": 50},
+      {"id": "pollo_crudo", "cantidad_g_por_porcion": 130},
+      {"id": "pimiento_verde", "cantidad_g_por_porcion": 30},
+      {"id": "cebolla_criolla", "cantidad_g_por_porcion": 25},
+      {"id": "aceite_vegetal", "cantidad_g_por_porcion": 12},
+      {"id": "sal_comun", "cantidad_g_por_porcion": 3}
+    ],
+    "metodo": "Sofreír guandú fresco con verduras criollas y pollo dorado; incorporar arroz y agua para secar a fuego suave.",
+    "tiempo_min": 45
+  },
+  {
+    "id": "sopa_res_tuberculos",
+    "nombre": "Sopa de Res con Yuca y Zapallo",
+    "ingredientes": [
+      {"id": "carne_res_cruda", "cantidad_g_por_porcion": 120},
+      {"id": "yuca_cruda", "cantidad_g_por_porcion": 90},
+      {"id": "zapallo_crudo", "cantidad_g_por_porcion": 80},
+      {"id": "repollo_blanco", "cantidad_g_por_porcion": 50},
+      {"id": "culantro_fresco", "cantidad_g_por_porcion": 6},
+      {"id": "ajo_diente", "cantidad_g_por_porcion": 4},
+      {"id": "sal_comun", "cantidad_g_por_porcion": 3}
+    ],
+    "metodo": "Hervir carne de res con culantro y ajo; sumar yuca, zapallo y repollo hasta que la verdura esté tierna y el caldo concentrado.",
+    "tiempo_min": 50
+  },
+  {
+    "id": "pollo_salteado_criollo",
+    "nombre": "Pollo Salteado con Culantro y Tomate",
+    "ingredientes": [
+      {"id": "pollo_crudo", "cantidad_g_por_porcion": 180},
+      {"id": "tomate_perita", "cantidad_g_por_porcion": 80},
+      {"id": "cebolla_criolla", "cantidad_g_por_porcion": 40},
+      {"id": "culantro_fresco", "cantidad_g_por_porcion": 8},
+      {"id": "ajo_diente", "cantidad_g_por_porcion": 5},
+      {"id": "aceite_vegetal", "cantidad_g_por_porcion": 10}
+    ],
+    "metodo": "Dorar tiras de pollo fresco a fuego vivo con ajo macerado; agregar cebolla, tomate perita y culantro picado fino hasta obtener salsa espesa.",
+    "tiempo_min": 25
+  },
+  {
+    "id": "tajadas_pollo_maduro",
+    "nombre": "Pollo a la Plancha con Plátano Maduro",
+    "ingredientes": [
+      {"id": "pollo_crudo", "cantidad_g_por_porcion": 160},
+      {"id": "platano_maduro", "cantidad_g_por_porcion": 110},
+      {"id": "tomate_perita", "cantidad_g_por_porcion": 50},
+      {"id": "cebolla_criolla", "cantidad_g_por_porcion": 30},
+      {"id": "aceite_vegetal", "cantidad_g_por_porcion": 12}
+    ],
+    "metodo": "Cocinar filetes de pollo a la plancha con cebolla caramelizada y acompañar con tajadas tiernas de plátano maduro doradas.",
+    "tiempo_min": 30
+  },
+  {
+    "id": "pollo_criollo_tomate_culantro",
+    "nombre": "Guiso de Pollo Criollo con Plátano",
+    "ingredientes": [
+      {"id": "pollo_crudo", "cantidad_g_por_porcion": 170},
+      {"id": "tomate_perita", "cantidad_g_por_porcion": 70},
+      {"id": "cebolla_criolla", "cantidad_g_por_porcion": 35},
+      {"id": "culantro_fresco", "cantidad_g_por_porcion": 6},
+      {"id": "platano_maduro", "cantidad_g_por_porcion": 80},
+      {"id": "ajo_diente", "cantidad_g_por_porcion": 4},
+      {"id": "aceite_vegetal", "cantidad_g_por_porcion": 10}
+    ],
+    "metodo": "Sellar pollo en trozos con ajo y cebolla; incorporar tomate perita y culantro, cocinando hasta obtener salsa concentrada con maduro.",
+    "tiempo_min": 35
+  },
+  {
+    "id": "arroz_lentejas_guisadas",
+    "nombre": "Arroz con Lentejas y Sofrito Campesino",
+    "ingredientes": [
+      {"id": "arroz_seco", "cantidad_g_por_porcion": 90},
+      {"id": "lentejas_secas", "cantidad_g_por_porcion": 70},
+      {"id": "cebolla_criolla", "cantidad_g_por_porcion": 35},
+      {"id": "zanahoria_cruda", "cantidad_g_por_porcion": 40},
+      {"id": "pimiento_verde", "cantidad_g_por_porcion": 30},
+      {"id": "aceite_vegetal", "cantidad_g_por_porcion": 10}
+    ],
+    "metodo": "Cocinar las lentejas a punto tierno; preparar sofrito criollo de cebolla, pimiento y zanahoria picada, y servir con arroz graneado.",
+    "tiempo_min": 35
+  },
+  {
+    "id": "estofado_lentejas_zanahoria",
+    "nombre": "Estofado Concentrado de Lentejas",
+    "ingredientes": [
+      {"id": "lentejas_secas", "cantidad_g_por_porcion": 85},
+      {"id": "zanahoria_cruda", "cantidad_g_por_porcion": 50},
+      {"id": "pimiento_verde", "cantidad_g_por_porcion": 35},
+      {"id": "cebolla_criolla", "cantidad_g_por_porcion": 35},
+      {"id": "aceite_vegetal", "cantidad_g_por_porcion": 10}
+    ],
+    "metodo": "Guisar las legumbres con trozos de zanahoria y pimiento hasta lograr textura densa y reconfortante.",
+    "tiempo_min": 35
+  },
+  {
+    "id": "sancocho_res_campesino",
+    "nombre": "Sancocho Criollo de Res y Tubérculos",
+    "ingredientes": [
+      {"id": "carne_res_cruda", "cantidad_g_por_porcion": 150},
+      {"id": "name_diamante", "cantidad_g_por_porcion": 110},
+      {"id": "yuca_cruda", "cantidad_g_por_porcion": 90},
+      {"id": "zapallo_crudo", "cantidad_g_por_porcion": 80},
+      {"id": "maiz_mazorca", "cantidad_g_por_porcion": 60},
+      {"id": "culantro_fresco", "cantidad_g_por_porcion": 8}
+    ],
+    "metodo": "Cocinar carne de res en agua con culantro fresco hasta ablandar; incorporar maíz, yuca, zapallo y ñame para espesar el caldo.",
+    "tiempo_min": 50
+  },
+  {
+    "id": "sopa_tuberculos_zapallo_res",
+    "nombre": "Caldo de Res con Zapallo, Yuca y Culantro",
+    "ingredientes": [
+      {"id": "carne_res_cruda", "cantidad_g_por_porcion": 140},
+      {"id": "yuca_cruda", "cantidad_g_por_porcion": 100},
+      {"id": "zapallo_crudo", "cantidad_g_por_porcion": 90},
+      {"id": "culantro_fresco", "cantidad_g_por_porcion": 6},
+      {"id": "maiz_mazorca", "cantidad_g_por_porcion": 60}
+    ],
+    "metodo": "Hervir res en trozos con mazorcas y culantro; sumar yuca y zapallo criollo que aporta color dorado y sabor autóctono.",
+    "tiempo_min": 45
+  }
+]

@@ -1,0 +1,22 @@
+id,nombre,cantidad_g,prioridad,apto,grupo,estado,fecha_limite
+pollo_crudo,Pollo Fresco,2500,alta,true,proteina,crudo,2026-11-04
+carne_res_cruda,Carne de Res Criolla,1800,alta,true,proteina,crudo,2026-11-03
+arroz_seco,Arroz Especial,3000,baja,true,cereal,crudo,2026-12-01
+lentejas_secas,Lentejas Grano,1200,media,true,legumbre,crudo,2026-12-15
+guandu_fresco,Guandú Fresco,800,alta,true,legumbre,crudo,2026-11-05
+platano_maduro,Plátano Maduro,1500,alta,true,fruta,crudo,2026-11-03
+name_diamante,Ñame Diamante,2000,media,true,tuberculo,crudo,2026-11-10
+yuca_cruda,Yuca Parafinada,1600,media,true,tuberculo,crudo,2026-11-08
+tomate_perita,Tomate Perita,1400,alta,true,vegetal,crudo,2026-11-02
+cebolla_criolla,Cebolla Criolla,1500,media,true,vegetal,crudo,2026-11-12
+culantro_fresco,Culantro Fresco,200,alta,true,vegetal,crudo,2026-11-02
+pimiento_verde,Pimiento Verde,900,media,true,vegetal,crudo,2026-11-04
+zanahoria_cruda,Zanahoria,1100,baja,true,vegetal,crudo,2026-11-15
+repollo_blanco,Repollo Blanco,1300,media,true,vegetal,crudo,2026-11-06
+ajo_diente,Ajo Criollo,300,baja,true,vegetal,crudo,2026-12-01
+maiz_mazorca,Maíz Nuevo en Mazorca,1000,media,true,cereal,crudo,2026-11-05
+frijol_chiricano,Frijol Chiricano,1000,media,true,legumbre,crudo,2026-12-20
+zapallo_crudo,Zapallo Criollo,1800,alta,true,vegetal,crudo,2026-11-04
+aceite_vegetal,Aceite Vegetal,1000,baja,true,grasa,crudo,2027-01-01
+sal_comun,Sal Yodada,500,baja,true,otro,crudo,2027-01-01
+

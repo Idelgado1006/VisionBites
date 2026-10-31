@@ -1,0 +1,65 @@
+:root {
+  --bg-canvas:#faf8f2; --bg-sidebar:#f0f1e8; --bg-surface:#fffdf8; --bg-subtle:#f4f1e8;
+  --border-crisp:#e4e4d7; --border-hover:#a4b79b; --text-primary:#303e32;
+  --text-secondary:#636c5e; --text-muted:#757b6d; --accent-sage:#426b4f;
+  --p-sage-bg:#e9efdf; --p-sage-bd:#cfddc4; --p-sage-tx:#3d6044;
+  --p-peach-bg:#fae7db; --p-peach-bd:#eed2bd; --p-peach-tx:#8b5034;
+  --p-lav-bg:#eeeafa; --p-lav-bd:#dcd6ec; --p-lav-tx:#675384;
+  --p-butter-bg:#f9efcf; --p-butter-bd:#e9dcae; --p-butter-tx:#78602c;
+  --p-rose-bg:#f9e6df; --p-rose-bd:#efcfc3; --p-rose-tx:#95543f;
+  --p-sky-bg:#e7eff0; --p-sky-bd:#ccdee0; --p-sky-tx:#496a73;
+}
+html, body, [data-testid="stApp"] {background:var(--bg-canvas); color:var(--text-primary);}
+[data-testid="stApp"] {font-family:"Segoe UI",sans-serif;}
+[data-testid="stMainBlockContainer"] {max-width:1220px; padding:2rem 3.2rem 3rem;}
+[data-testid="stHeader"] {background:transparent; height:2.5rem;}
+[data-testid="stSidebar"] {background:var(--bg-sidebar); border-right:1px solid var(--border-crisp); min-width:270px; max-width:290px;}
+[data-testid="stSidebarUserContent"] {padding:1.3rem 1.5rem 2rem;}
+[data-testid="stVerticalBlock"] {gap:1rem;}
+[data-testid="stSidebar"] [data-testid="stVerticalBlock"] {gap:.85rem;}
+h1,h2,h3,h4,.editorial-title {color:var(--text-primary); font-weight:500;}
+.editorial-title,h1,h2,h3 {font-family:Georgia,"Times New Roman",serif; letter-spacing:-.035em;}
+h1 {font-size:2.8rem; line-height:1.12;}
+h3 {font-size:1.8rem;}
+p {line-height:1.6;}
+[data-testid="stCaptionContainer"] {color:var(--text-secondary); font-size:.88rem;}
+.brand {display:flex; gap:.65rem; align-items:center; font-family:Georgia,serif; font-size:1.7rem; letter-spacing:-.06em; margin-bottom:1rem;}
+.brand small {display:block; font: .68rem/1.7 "Segoe UI",sans-serif; letter-spacing:0; color:var(--text-secondary);}
+.brand-mark {position:relative; display:grid; place-items:center; width:43px; height:43px; background:#dce7cf; border-radius:13px; font-size:2.5rem; line-height:1; color:#46684a;}
+.brand-mark span {position:absolute; right:7px; top:1px; font-size:1.5rem;}
+.sidebar-label,.eyebrow,.journey-label,.topline {font:600 .67rem/1.6 "Segoe UI",sans-serif; letter-spacing:.13em;}
+.sidebar-label {margin:1.25rem 0 .2rem; color:var(--text-secondary);}
+.sidebar-tip {margin:1rem 0 .5rem; border-top:1px solid #d9dfce; padding-top:1rem; font-size:.81rem; line-height:1.65; color:var(--text-secondary);}
+.sidebar-tip b {display:block; font:italic 1.15rem Georgia,serif; color:#526c48; margin-bottom:.4rem;}
+.topline {display:flex; justify-content:space-between; color:var(--text-secondary); margin-bottom:1.15rem; gap:1rem;}
+.topline-note {font-weight:400; letter-spacing:0; font-size:.78rem;}
+.mobile-brand {display:none;}
+.kitchen-hero {position:relative; display:flex; align-items:center; background:#e9efdf; border:1px solid #dee5d1; border-radius:16px; min-height:280px; overflow:hidden; padding:2rem 2.1rem;}
+.hero-copy {position:relative; z-index:1; width:65%;}
+.eyebrow {color:#5f7555; font-size:.64rem;}
+.kitchen-hero h1 {font-family:Georgia,"Times New Roman",serif !important; font-size:clamp(2.1rem,3.1vw,3.25rem); margin:.6rem 0 .85rem; font-weight:400;}
+.kitchen-hero h1 em {color:#5c7c50; font-weight:400;}
+.kitchen-hero p {font-size:.87rem; line-height:1.7; margin:0; color:#5f6b56;}
+.hero-note {display:block; font:italic .83rem Georgia,serif; color:#61714f; margin-top:1.4rem;}
+.kitchen-hero img {position:absolute; right:-1rem; bottom:.4rem; width:46%; max-height:270px;}
+.page-heading {padding:1rem 0;}
+.page-heading h1 {margin:0 0 .6rem;}
+.page-heading p {color:var(--text-secondary); margin:0;}
+.journey-label {display:flex; justify-content:space-between; margin-top:1rem; color:var(--text-secondary);}
+.journey-label span:last-child {letter-spacing:0; font-weight:400;}
+[data-testid="stRadio"]:has([aria-label="Navegación principal"]) [role="radiogroup"] {display:flex; gap:0; background:#f0eee5; padding:5px; border-radius:12px;}
+[data-testid="stRadio"]:has([aria-label="Navegación principal"]) label {flex:1; min-height:48px; justify-content:center; padding:.55rem .5rem; margin:0; border-radius:8px; color:var(--text-secondary);}
+[data-testid="stRadio"]:has([aria-label="Navegación principal"]) label:has(input:checked) {background:var(--bg-surface); color:var(--accent-sage); box-shadow:0 1px 3px #34452b12;}
+[data-testid="stRadio"]:has([aria-label="Navegación principal"]) label>div:first-child {display:none !important;}
+[data-testid="stRadio"]:has([aria-label="Navegación principal"]) label p {font-size:.88rem; font-weight:600;}
+[data-testid="stRadio"] label:has(input:focus-visible) {outline:2px solid var(--accent-sage); outline-offset:2px;}
+.section-heading {display:flex; justify-content:space-between; gap:1rem; align-items:center; margin:.9rem 0 0;}
+.section-heading h2 {font-size:1.7rem; margin:0;}
+.section-heading p {margin:.35rem 0 0; font-size:.87rem; color:var(--text-secondary);}
+.section-count {font-size:.72rem; background:var(--p-butter-bg); border-radius:6px; padding:.4rem .7rem; white-space:nowrap; color:var(--p-butter-tx);}
+@media (prefers-reduced-motion:no-preference) {
+  .kitchen-hero,.page-heading,.op-card,.empty-state {animation:reveal .35s ease-out;}
+  .stButton>button {transition:background .16s,transform .16s,border-color .16s;}
+  .stButton>button:active {transform:translateY(1px);}
+}
+@keyframes reveal {from {opacity:0;transform:translateY(5px)} to {opacity:1;transform:translateY(0)}}

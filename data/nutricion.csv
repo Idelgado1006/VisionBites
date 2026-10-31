@@ -1,0 +1,22 @@
+id,estado,kcal_100g,proteina_g_100g,carbohidratos_g_100g,grasa_g_100g,fibra_g_100g,sodio_mg_100g,fuente
+pollo_crudo,crudo,120.0,22.5,0.0,2.6,0.0,65.0,USDA FoodData Central 171077
+carne_res_cruda,crudo,143.0,21.0,0.0,6.0,0.0,55.0,USDA FoodData Central 168652
+arroz_seco,crudo,365.0,7.1,80.0,0.7,1.3,5.0,USDA FoodData Central 169756
+lentejas_secas,crudo,353.0,25.8,60.1,1.1,30.5,6.0,USDA FoodData Central 172420
+guandu_fresco,crudo,136.0,7.2,23.9,1.5,5.1,5.0,INCAP / USDA FDC 173760
+platano_maduro,crudo,122.0,1.3,31.9,0.4,2.3,4.0,USDA FoodData Central 173944
+name_diamante,crudo,118.0,1.5,27.9,0.2,4.1,9.0,USDA FoodData Central 170071
+yuca_cruda,crudo,160.0,1.4,38.1,0.3,1.8,14.0,USDA FoodData Central 169385
+tomate_perita,crudo,18.0,0.9,3.9,0.2,1.2,5.0,USDA FoodData Central 170457
+cebolla_criolla,crudo,40.0,1.1,9.3,0.1,1.7,4.0,USDA FoodData Central 170000
+culantro_fresco,crudo,23.0,2.1,3.7,0.5,2.8,46.0,INCAP / USDA FDC
+pimiento_verde,crudo,20.0,0.9,4.6,0.2,1.7,3.0,USDA FoodData Central 170108
+zanahoria_cruda,crudo,41.0,0.9,9.6,0.2,2.8,69.0,USDA FoodData Central 170393
+repollo_blanco,crudo,25.0,1.3,5.8,0.1,2.5,18.0,USDA FoodData Central 169975
+ajo_diente,crudo,149.0,6.4,33.1,0.5,2.1,17.0,USDA FoodData Central 169230
+maiz_mazorca,crudo,86.0,3.2,19.0,1.2,2.7,15.0,USDA FoodData Central 169998
+frijol_chiricano,crudo,341.0,21.6,62.4,1.2,15.2,12.0,INCAP Tabla de Alimentos
+zapallo_crudo,crudo,26.0,1.0,6.5,0.1,0.5,1.0,USDA FoodData Central 169295
+aceite_vegetal,crudo,884.0,0.0,0.0,100.0,0.0,0.0,USDA FoodData Central 171413
+sal_comun,crudo,0.0,0.0,0.0,0.0,0.0,38758.0,USDA FoodData Central 173468
+
