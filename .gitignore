@@ -1,20 +1,30 @@
-# Entornos virtuales
-.venv/
-env/
-venv/
-
-# Variables de entorno
-.env
-
-# Python cache
+# Byte-compiled / optimized / DLL files
 __pycache__/
-*.py[cod]
+*.py[codz]
 *$py.class
 *.so
-.pytest_cache/
 
-# Streamlit logs y cache
+# Environments
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Unit test / coverage reports
+.pytest_cache/
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+
+# Streamlit
 .streamlit/
+.streamlit/secrets.toml
 
 # Frontend
 frontend/node_modules/
@@ -22,4 +32,12 @@ frontend/dist/
 frontend/.vite/
 frontend/*.tsbuildinfo
 
+# Credentials and private keys
+*.pem
+*.key
+credentials.json
+service-account*.json
 
+# Local temporary files
+*.log
+.tmp/

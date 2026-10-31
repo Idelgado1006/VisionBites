@@ -16,51 +16,40 @@ load_dotenv()
 
 # Mapeo determinista de sinónimos culinarios a IDs canónicos del catálogo nutricional
 MAPA_ALIAS_CATALOGO = {
-    "pollo": "pollo_crudo", "pollo_fresco": "pollo_crudo", "pechuga": "pollo_crudo",
-    "pechuga_pollo": "pollo_crudo", "pechuga_de_pollo": "pollo_crudo", "muslo_pollo": "pollo_crudo",
-    "carne": "carne_res_cruda", "res": "carne_res_cruda", "carne_res": "carne_res_cruda",
-    "carne_de_res": "carne_res_cruda", "carne_molida": "carne_res_cruda",
-    "arroz": "arroz_seco", "arroz_blanco": "arroz_seco",
-    "lenteja": "lentejas_secas", "lentejas": "lentejas_secas",
-    "guandu": "guandu_fresco", "guandú": "guandu_fresco",
-    "platano": "platano_maduro", "plátano": "platano_maduro", "tajada": "platano_maduro", "tajadas": "platano_maduro",
-    "name": "name_diamante", "ñame": "name_diamante",
-    "yuca": "yuca_cruda", "mandioca": "yuca_cruda",
-    "tomate": "tomate_perita", "tomates": "tomate_perita", "tomate_rojo": "tomate_perita",
+    "pollo": "pollo_crudo", "pollo_fresco": "pollo_crudo", "pechuga": "pollo_crudo", "pechuga_pollo": "pollo_crudo", "pechuga_de_pollo": "pollo_crudo", "muslo_pollo": "pollo_crudo",
+    "carne": "carne_res_cruda", "res": "carne_res_cruda", "carne_res": "carne_res_cruda", "carne_de_res": "carne_res_cruda", "carne_molida": "carne_res_cruda",
+    "arroz": "arroz_seco", "arroz_blanco": "arroz_seco", "lenteja": "lentejas_secas", "lentejas": "lentejas_secas", "guandu": "guandu_fresco", "guandú": "guandu_fresco",
+    "platano": "platano_maduro", "plátano": "platano_maduro", "tajada": "platano_maduro", "tajadas": "platano_maduro", "name": "name_diamante", "ñame": "name_diamante",
+    "yuca": "yuca_cruda", "mandioca": "yuca_cruda", "tomate": "tomate_perita", "tomates": "tomate_perita", "tomate_rojo": "tomate_perita",
     "cebolla": "cebolla_criolla", "cebollas": "cebolla_criolla", "cebolla_morada": "cebolla_criolla", "cebolla_blanca": "cebolla_criolla",
-    "culantro": "culantro_fresco", "cilantro": "culantro_fresco",
-    "pimiento": "pimiento_verde", "pimenton": "pimiento_verde", "pimentón": "pimiento_verde", "aji": "pimiento_verde",
-    "zanahoria": "zanahoria_cruda", "zanahorias": "zanahoria_cruda",
-    "repollo": "repollo_blanco", "col": "repollo_blanco",
-    "ajo": "ajo_diente", "ajos": "ajo_diente",
-    "maiz": "maiz_mazorca", "maíz": "maiz_mazorca", "mazorca": "maiz_mazorca", "elote": "maiz_mazorca",
-    "frijol": "frijol_chiricano", "frijoles": "frijol_chiricano", "poroto": "frijol_chiricano",
-    "zapallo": "zapallo_crudo", "calabaza": "zapallo_crudo", "auyama": "zapallo_crudo",
-    "aceite": "aceite_vegetal", "aceite_cocina": "aceite_vegetal",
-    "sal": "sal_comun"
+    "culantro": "culantro_fresco", "cilantro": "culantro_fresco", "pimiento": "pimiento_verde", "pimenton": "pimiento_verde", "pimentón": "pimiento_verde", "aji": "pimiento_verde",
+    "zanahoria": "zanahoria_cruda", "zanahorias": "zanahoria_cruda", "repollo": "repollo_blanco", "col": "repollo_blanco", "ajo": "ajo_diente", "ajos": "ajo_diente",
+    "maiz": "maiz_mazorca", "maíz": "maiz_mazorca", "mazorca": "maiz_mazorca", "elote": "maiz_mazorca", "frijol": "frijol_chiricano", "frijoles": "frijol_chiricano", "poroto": "frijol_chiricano",
+    "zapallo": "zapallo_crudo", "calabaza": "zapallo_crudo", "auyama": "zapallo_crudo", "aceite": "aceite_vegetal", "aceite_cocina": "aceite_vegetal", "sal": "sal_comun"
 }
 
 PROMPT_VISION_SCANNER = """Eres VisionBites, sistema experto en visión gastronómica multimodal.
-Analiza la fotografía adjunta (ingredientes en cocina, nevera, despensa o plato de comida).
-Identifica detalladamente todos los alimentos visibles y asígnalos a los identificadores canónicos del catálogo:
-[pollo_crudo, carne_res_cruda, arroz_seco, lentejas_secas, guandu_fresco, platano_maduro,
-name_diamante, yuca_cruda, tomate_perita, cebolla_criolla, culantro_fresco, pimiento_verde,
-zanahoria_cruda, repollo_blanco, ajo_diente, maiz_mazorca, frijol_chiricano, zapallo_crudo,
-aceite_vegetal, sal_comun].
-
-Devuelve un arreglo JSON de objetos con la siguiente estructura:
+Analiza esta fotografía de cocina, nevera o despensa.
+¿Qué ingredientes o alimentos ves?
+Lista cada alimento que observes en formato JSON:
+```json
 [
   {
-    "id": "id_del_catalogo_arriba",
-    "nombre": "Nombre descriptivo en Español",
-    "cantidad_g": numero_entero_estimado_en_gramos,
-    "grupo": "vegetal" | "fruta" | "cereal" | "legumbre" | "proteina" | "tuberculo" | "grasa" | "otro",
-    "prioridad": "alta" | "media" | "baja",
-    "estado": "crudo" | "cocido" | "otro",
+    "id": "identificador_en_minusculas",
+    "nombre": "Nombre del alimento en Español",
+    "cantidad_g": 300,
+    "grupo": "vegetal",
+    "prioridad": "alta",
+    "estado": "crudo",
     "apto": true
   }
 ]
-Examina la imagen cuidadosamente y lista cada alimento detectado en el arreglo JSON:"""
+```
+Usa identificadores canónicos en minúsculas como: tomate_perita, cebolla_criolla, pimiento_verde, pollo_crudo, carne_res_cruda, platano_maduro, arroz_seco, lentejas_secas, guandu_fresco, name_diamante, yuca_cruda, culantro_fresco, zanahoria_cruda, repollo_blanco, ajo_diente, maiz_mazorca, frijol_chiricano, zapallo_crudo, aceite_vegetal, sal_comun.
+Valores para "grupo": vegetal, fruta, cereal, legumbre, proteina, tuberculo, grasa, otro.
+Valores para "prioridad": alta, media, baja.
+Valores para "estado": crudo, cocido, otro.
+Responde únicamente con el bloque JSON."""
 
 PRESETS_MUESTRAS = {
     "nevera_fresca": {
@@ -197,29 +186,48 @@ def scan_food_image(
         client = genai.Client(api_key=api_key)
         part_image = types.Part.from_bytes(data=image_bytes, mime_type=mime_type)
 
-        # En modelos Gemma, forzar response_mime_type provoca colapso a arreglo vacío ([])
-        # por gramática sintética; sin ella, Gemma 4 genera el bloque JSON completo.
-        es_gemma = "gemma" in modelo_nombre.lower()
-        config_params = {"temperature": 0.1 if es_gemma else 0.2}
-        if not es_gemma:
-            config_params["response_mime_type"] = "application/json"
+        modelos_a_probar = [modelo_nombre]
+        if "gemma" in modelo_nombre.lower():
+            modelos_a_probar.append("gemini-3.8-flash")
 
-        response = client.models.generate_content(
-            model=modelo_nombre,
-            contents=[part_image, PROMPT_VISION_SCANNER],
-            config=types.GenerateContentConfig(**config_params)
-        )
+        items = []
+        modelo_exitoso = modelo_nombre
+        ultimo_error = None
 
-        if not response or not response.text:
-            raise ValueError(f"Respuesta vacía desde el modelo {modelo_nombre}.")
+        for m in modelos_a_probar:
+            try:
+                # En modelos Gemma, forzar response_mime_type provoca colapso a arreglo vacío ([])
+                # por gramática sintética; sin ella, Gemma 4 genera el bloque JSON completo.
+                es_gemma = "gemma" in m.lower()
+                config_params = {"temperature": 0.1 if es_gemma else 0.2}
+                if not es_gemma:
+                    config_params["response_mime_type"] = "application/json"
 
-        items_crudos = _limpiar_json(response.text)
-        items = _normalizar_items_detectados(items_crudos)
+                response = client.models.generate_content(
+                    model=m,
+                    contents=[part_image, PROMPT_VISION_SCANNER],
+                    config=types.GenerateContentConfig(**config_params)
+                )
+
+                if not response or not response.text:
+                    continue
+
+                items_crudos = _limpiar_json(response.text)
+                candidatos = _normalizar_items_detectados(items_crudos)
+                if candidatos:
+                    items = candidatos
+                    modelo_exitoso = m
+                    break
+            except Exception as e:
+                ultimo_error = e
+                continue
 
         if not items:
+            if ultimo_error:
+                raise ultimo_error
             raise ValueError(f"No se detectaron ingredientes procesables en la imagen con {modelo_nombre}.")
 
-        ESTADO_SCANNER["ultimo_metodo"] = f"Visión IA en vivo ({modelo_nombre})"
+        ESTADO_SCANNER["ultimo_metodo"] = f"Visión IA en vivo ({modelo_exitoso})"
         ESTADO_SCANNER["mensaje"] = f"Identificados {len(items)} ingredientes en la foto."
         ESTADO_SCANNER["usando_respaldo"] = False
         return items
