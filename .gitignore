@@ -218,3 +218,33 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# =======================================
+# VisionBites - Secrets and local settings
+# =======================================
+
+.env
+.env.*
+!.env.example
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Streamlit secrets
+.streamlit/secrets.toml
+
+# Credentials and private keys
+*.pem
+*.key
+credentials.json
+service-account*.json
+
+# Local temporary files
+*.log
+.tmp/
